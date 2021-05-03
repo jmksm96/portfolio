@@ -9,7 +9,7 @@ const Works = () => {
         <div className={style.worksBlock}>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
                 <h2 className={style.title}>Мои работы</h2>
-                <div className={style.wokrs}>
+                <div className={style.works}>
                     <Project picture={'Здесь будет картинка'}
                              watch={'Смотреть'}
                              title={'TodoList'}
