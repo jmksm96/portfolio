@@ -12,7 +12,7 @@
 .block {
     border: 2px solid;
     height: 50px;
-    width: 490px;
+    width: 100%;
     margin: 50px;
 
 }
@@ -28,5 +28,5 @@
 .blockItem {
     background-color: #24a5ff;
     height: 50px;
-    width: 70px;
+    width: 20%;
 }
