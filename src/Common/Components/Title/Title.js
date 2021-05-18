@@ -5,7 +5,7 @@ import style from './Title.module.css'
 const Title = (props) => {
     return (
         <div className={style.title}>
-            <h2 >Мои работы</h2>
+            <h2 >{props.text}</h2>
         </div>
     )
 }
