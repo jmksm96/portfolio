@@ -5,7 +5,7 @@ import Skills from "./Skills/Skills";
 import SendMessage from "./SendMessage/SendMessage";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
-import Works from "./Works/Works";
+import Projects from "./Works/Projects";
 
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
             <Header/>
             <Main/>
             <Skills/>
-            <Works/>
+            <Projects/>
             <SendMessage/>
             <Contacts/>
             <Footer/>

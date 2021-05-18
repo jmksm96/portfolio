@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
                 <div>©2021 Все права защищены</div>
             </div>
-        </div>
+        </div >
     )
 }
 

@@ -19,7 +19,7 @@ const Contacts = () => {
                         <textarea>Введите ваше сообщение</textarea>
                     </div>
                     <div className={style.button}>
-                        <button>Отправить</button>
+                        <button type = "submit">Отправить</button>
                     </div>
                 </form>
             </div>

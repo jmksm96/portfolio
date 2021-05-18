@@ -1,0 +1,52 @@
+.worksBlock {
+    height: 80vh;
+    background-color: #1f1f20;
+}
+
+.worksContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    margin: 0;
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.2;
+
+}
+
+.title::before {
+    content: "";
+    background: #4e93e6;
+    width: 55px;
+    height: 1px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.works {
+    margin-top: 30px;
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1129px) {
+    .works {
+        justify-content: center;
+    }
+}

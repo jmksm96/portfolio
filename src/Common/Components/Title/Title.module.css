@@ -1,0 +1,26 @@
+.title {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    margin: 0;
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.2;
+
+}
+
+.title::before {
+    content: "";
+    background: #4e93e6;
+    width: 55px;
+    height: 1px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

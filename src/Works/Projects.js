@@ -1,14 +1,15 @@
 import React from 'react'
-import style from './Works.module.css'
+import style from './Projects.module.css'
 import styleContainer from '../Common/Styles/Container.module.css'
 import Project from "./Project/Project";
+import Title from "../Common/Components/Title/Title";
 
 
-const Works = () => {
+const Projects = () => {
     return (
         <div className={style.worksBlock}>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
-                <h2 className={style.title}>Мои работы</h2>
+                <Title/>
                 <div className={style.works}>
                     <Project picture={'Здесь будет картинка'}
                              watch={'Смотреть'}
@@ -25,4 +26,4 @@ const Works = () => {
     )
 }
 
-export default Works
+export default Projects
