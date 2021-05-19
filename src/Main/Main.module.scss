@@ -23,7 +23,8 @@
     }
     h1 {
         margin: 0 0 5px;
-        @include text($titleFontFamily, 46px, 1.2)
+        @include text($titleFontFamily, 46px, 1.2);
+        font-weight: normal;
     }
 }
 
