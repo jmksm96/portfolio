@@ -4,8 +4,8 @@ import Skill from "./Skill/Skill";
 import Title from "../Common/Components/Title/Title";
 import reactIm from '../Assets/Icons/react.png'
 import reduxIm from '../Assets/Icons/redux.png'
-import jsIm from '../Assets/Icons/typescript_js.png'
-import htmlIm from '../Assets/Icons/html_css.png'
+import tsIm from '../Assets/Icons/typescript.png'
+import htmlIm from '../Assets/Icons/html5.png'
 
 
 const Skills = () => {
@@ -18,12 +18,35 @@ const Skills = () => {
         backgroundImage: `url(${reduxIm})`
     }
     const jsImg = {
-        backgroundImage: `url(${jsIm})`
+        backgroundImage: `url(${tsIm})`
     }
     const htmlImg = {
         backgroundImage: `url(${htmlIm})`
     }
 
+
+    const skillArr = [
+        {
+            title: "React",
+            imgLogo: reactImg,
+            skills: ["Functional components", "Class components", "HOC", "Promises", 'Flux', "Hooks", "REST API", "Storybook", "MaterialUI", 'AntDesign']
+        },
+        {
+            title: "TypeScript/JavaScript",
+            imgLogo: jsImg,
+            skills: ["ES6", 'Callbacks']
+        },
+        {
+            title: "Redux",
+            imgLogo: reduxImg,
+            skills: ["Redux in TypeScript", "Connect", "Redux-form", "Redux Thunk"]
+        },
+        {
+            title: "HTML/CSS",
+            imgLogo: htmlImg,
+            skills: ["Adaptive layout", "Sass", "GH-pages"]
+        }
+    ]
 
 
     return (
@@ -31,9 +54,13 @@ const Skills = () => {
             <div className={style.container}>
                 <Title text={'Skills'}/>
                 <div className={style.skills}>
-                    <Skill title={'React'} description={'Здесь будет описание'}/>
-                    <Skill title={'TypeScript'} description={'Здесь будет описание'}/>
-                    <Skill title={'JavaScript'} description={'Здесь будет описание'}/>
+
+                    {skillArr.map((skills) => (
+                        <Skill key={skills.title}
+                               style={skills.imgLogo}
+                               title={skills.title}
+                               skills={skills.skills}/>))}
+
                 </div>
 
             </div>

@@ -5,6 +5,7 @@
     padding: 100px 0;
     background-color: $bgSecondColor;
 
+
     .container {
         @include flex(column, flex-start, center, wrap);
         @include container();
