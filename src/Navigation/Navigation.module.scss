@@ -1,16 +1,13 @@
 @import './../Common/Styles/Sass/mixins';
 
 
-
 .nav {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
+  @include container();
+  @include flex(row, space-between, center, nowrap);
 
-
-    a{
-        @include text($textFontFamily, 14px, 1.8);
-        font-weight: 400;
-        text-decoration: none;
-    }
+  a {
+    @include text($textFontFamily, 14px, 1.8);
+    font-weight: 400;
+    text-decoration: none;
+  }
 }

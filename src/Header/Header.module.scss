@@ -2,9 +2,10 @@
 @import './../Common/Styles/Sass/mixins';
 
 .header {
-    @include flex(row, space-around, center, wrap);
+    @include flex(row, center, center, wrap);
     height: 80px;
     background-color: $bgColor;
+    width: 100%;
     //display: flex;
     //justify-content: flex-end;
     //align-items: center;
