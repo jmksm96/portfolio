@@ -1,0 +1,31 @@
+@import '../Common/Styles/Sass/variabless';
+@import '../Common/Styles/Sass/mixins';
+
+.mainBlock {
+    height: 100vh;
+    background-color: $bgColor;
+    .greet {
+        width: 300px;
+        background-color: $bgSecondColor;
+    }
+    .photo {
+        width: 300px;
+        height: 400px;
+        background-color: $bgSecondColor;
+    }
+    span {
+        @include text($textFontFamily, 14px, 1.8);
+        font-weight: 400;
+    }
+    p {
+        @include text($textFontFamily, 14px, 1.8);
+        font-weight: 400;
+    }
+    h1 {
+        margin: 0 0 5px;
+        @include text($titleFontFamily, 46px, 1.2)
+    }
+}
+
+
+

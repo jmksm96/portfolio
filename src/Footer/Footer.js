@@ -1,12 +1,13 @@
 import React from 'react'
-import style from './Footer.module.css'
+import style from './Footer.module.scss'
 import styleContainer from '../Common/Styles/Container.module.css'
+import Title from "../Common/Components/Title/Title";
 
 const Footer = () => {
     return (
         <div className={style.mainBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h1>Ярош Максим</h1>
+                <Title text = {'Maxim Yarosh'}/>
                 <div className={style.block}>
                     <div className={style.blockContainer}>
                         <div className={style.blockItem}></div>
@@ -16,7 +17,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div>©2021 Все права защищены</div>
+                <div className={style.footerDescription}>©2021 Все права защищены</div>
             </div>
         </div >
     )

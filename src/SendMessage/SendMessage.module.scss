@@ -1,0 +1,19 @@
+@import '../Common/Styles/Sass/variabless';
+
+.skillsContainer {
+  background-color: $bgColor;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+
+  button {
+    margin: 30px;
+    background-color: $primaryColor;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+    color: $textColor;
+  }
+}
+

@@ -1,0 +1,17 @@
+@import './../Common/Styles/Sass/mixins';
+
+
+
+.nav {
+    border: 1px solid;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+
+    a{
+        @include text($textFontFamily, 14px, 1.8);
+        font-weight: 400;
+        text-decoration: none;
+    }
+}

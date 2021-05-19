@@ -1,13 +1,13 @@
 import React from 'react'
-import style from './Navigation.module.css'
+import style from './Navigation.module.scss'
 
 const Navigation = () => {
     return (
         <div className={style.nav}>
-            <a href="">Главная</a>
-            <a href="">Навыки</a>
-            <a href="">Проекты</a>
-            <a href="">Контакты</a>
+            <a href="" >Main</a>
+            <a href="">Skills</a>
+            <a href="">Projects</a>
+            <a href="">Contacts</a>
         </div>
     )
 }
