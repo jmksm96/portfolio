@@ -3,10 +3,13 @@
 
 .header {
     @include flex(row, center, center, wrap);
-    height: 80px;
-    background-color: $bgColor;
+    position: fixed;
+    height: 50px;
+    min-width: 100%;
+    background-color: $bgSecondColor;
     width: 100%;
-    //display: flex;
-    //justify-content: flex-end;
-    //align-items: center;
+    z-index: 10;
+    @media screen and (max-width:1030px){
+        height: 60px;
+    }
 }

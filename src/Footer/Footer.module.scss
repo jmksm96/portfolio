@@ -2,7 +2,7 @@
 @import './../Common/Styles/Sass/mixins';
 
 .mainBlock {
-  background-color: $bgColor;
+  background-color: $bgSecondColor;
   min-height: 300px;
   @include flex(row, center, stretch, nowrap);
 

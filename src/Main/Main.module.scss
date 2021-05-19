@@ -3,6 +3,18 @@
 
 .mainBlock {
   background-color: $bgColor;
+  min-height: 100vh;
+  @include flex(row, center, center, nowrap);
+  padding: 100px 0;
+
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+  }
 
   .container {
     @include container();
@@ -42,12 +54,12 @@
             }
           }
         }
-      }
-        h1 {
-            margin: 0;
-            @include text($titleFontFamily, 28px, 1.2);
-            font-weight: 400;
+        &:nth-child(3) {
+          @include text($titleFontFamily, 28px, 1.2);
+          font-weight: 400;
+          margin: 0;
         }
+      }
     }
 
     .photo {
@@ -82,11 +94,6 @@
       }
     }
   }
-
-
-
-
-
 }
 
 

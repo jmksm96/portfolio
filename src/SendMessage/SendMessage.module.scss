@@ -3,20 +3,11 @@
 @import '../Common/Components/Button/Button.module';
 
 .container {
-  background-color: $bgColor;
+  background-color: $bgSecondColor;
   @include flex(column, flex-start, center, wrap);
 
   .button {
     @extend .btn;
   }
-
-  //button {
-  //  margin: 30px;
-  //  background-color: $primaryColor;
-  //  padding: 10px 20px;
-  //  position: relative;
-  //  z-index: 1;
-  //  color: $textColor;
-  //}
 }
 
