@@ -22,10 +22,10 @@ const Projects = () => {
                 <div className={style.projects}>
                     <Project style={todolist}
                              title={'TodoList'}
-                             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nemo pariatur quas'}/>
+                             description={'SPA with usage Material UI React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}/>
                     <Project style={social}
                              title={'Social Network'}
-                             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nemo pariatur quas'}/>
+                             description={'SPA with usage AntDesign React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}/>
 
                 </div>
             </div>

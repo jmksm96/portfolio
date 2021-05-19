@@ -8,20 +8,12 @@ const Contacts = () => {
     return (
         <div className={style.mainBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-              <Title text={'Contacts'}/>
+                <Title text={'Contacts'}/>
                 <form className={style.formContainer}>
-                    <div className={style.blockItem}>
-                        <input type="text"/>
-                    </div>
-                    <div className={style.blockItem}>
-                        <input type="text"/>
-                    </div>
-                    <div className={style.blockItem}>
-                        <textarea>Введите ваше сообщение</textarea>
-                    </div>
-                    <div className={style.button}>
-                        <button type = "submit">Отправить</button>
-                    </div>
+                        <input type="text" className={style.formArea} placeholder={'Name'}/>
+                        <input type="text" className={style.formArea} placeholder={'E-mail'}/>
+                        <textarea placeholder={'Message'}/>
+                        <button type="submit" className={style.button}>Send message</button>
                 </form>
             </div>
         </div>
