@@ -10,8 +10,8 @@ const Skill = (props) => {
             <div className={style.skillInfo}>
                 <div className={style.title}>{props.title}</div>
                 <div className={style.description}>
-                {props.description}
-            </div>
+                    {props.description}
+                </div>
             </div>
         </div>
     )

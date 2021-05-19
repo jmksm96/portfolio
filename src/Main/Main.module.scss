@@ -2,30 +2,91 @@
 @import '../Common/Styles/Sass/mixins';
 
 .mainBlock {
-    height: 100vh;
-    background-color: $bgColor;
+  background-color: $bgColor;
+
+  .container {
+    @include container();
+    @include flex(row, space-around, center, wrap);
+
     .greet {
-        width: 300px;
-        background-color: $bgSecondColor;
+      @include flex(column, flex-start, flex-start, nowrap);
+
+      span {
+        @include text($textFontFamily, 14px, 1.8);
+        font-weight: 400;
+      }
+
+      span {
+        font-size: 16px;
+
+        &:nth-child(2) {
+          @include text($titleFontFamily, 50px, 1.2);
+          font-weight: normal;
+          margin: 10px 0;
+
+          span {
+            @include text($titleFontFamily, 50px, 1.2);
+            font-weight: normal;
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+
+            &:before {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 20px;
+              background-color: $primaryColor;
+              bottom: 0;
+              z-index: -1;
+            }
+          }
+        }
+      }
+        h1 {
+            margin: 0;
+            @include text($titleFontFamily, 28px, 1.2);
+            font-weight: 400;
+        }
     }
+
     .photo {
-        width: 300px;
+      position: relative;
+      z-index: 1;
+      @media screen and (max-width: 1143px) {
+        margin-top: 50px;
+      }
+
+      .image {
         height: 400px;
-        background-color: $bgSecondColor;
+        width: 350px;
+        @include bgSettings();
+        background-image: url('./../Assets/Photo/DSC_0023-01.jpeg');
+        background-position: 80% 0;
+        @media screen and (max-width: 1143px) {
+          height: 260px;
+          width: 360px;
+          transition: .5s;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 105%;
+          height: 110%;
+          border: 5px solid $primaryColor;
+          left: 15px;
+          top: -15px;
+          z-index: -1;
+        }
+      }
     }
-    span {
-        @include text($textFontFamily, 14px, 1.8);
-        font-weight: 400;
-    }
-    p {
-        @include text($textFontFamily, 14px, 1.8);
-        font-weight: 400;
-    }
-    h1 {
-        margin: 0 0 5px;
-        @include text($titleFontFamily, 46px, 1.2);
-        font-weight: normal;
-    }
+  }
+
+
+
+
+
 }
 
 

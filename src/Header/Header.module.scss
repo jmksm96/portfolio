@@ -1,9 +1,11 @@
 @import './../Common/Styles/Sass/variabless';
+@import './../Common/Styles/Sass/mixins';
 
 .header {
+    @include flex(row, space-around, center, wrap);
     height: 80px;
     background-color: $bgColor;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    //display: flex;
+    //justify-content: flex-end;
+    //align-items: center;
 }

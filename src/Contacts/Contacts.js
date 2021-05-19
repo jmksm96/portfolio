@@ -6,7 +6,7 @@ import Title from "../Common/Components/Title/Title";
 const Contacts = () => {
     return (
         <div className={style.mainBlock}>
-            <div className={style.skillsContainer}>
+            <div className={style.container}>
                 <Title text={'Contacts'}/>
                 <form className={style.formContainer}>
                         <input type="text" className={style.formArea} placeholder={'Name'}/>

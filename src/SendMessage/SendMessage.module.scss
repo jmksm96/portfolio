@@ -1,19 +1,22 @@
 @import '../Common/Styles/Sass/variabless';
+@import '../Common/Styles/Sass/mixins';
+@import '../Common/Components/Button/Button.module';
 
-.skillsContainer {
+.container {
   background-color: $bgColor;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
+  @include flex(column, flex-start, center, wrap);
 
-  button {
-    margin: 30px;
-    background-color: $primaryColor;
-    padding: 10px 20px;
-    position: relative;
-    z-index: 1;
-    color: $textColor;
+  .button {
+    @extend .btn;
   }
+
+  //button {
+  //  margin: 30px;
+  //  background-color: $primaryColor;
+  //  padding: 10px 20px;
+  //  position: relative;
+  //  z-index: 1;
+  //  color: $textColor;
+  //}
 }
 
