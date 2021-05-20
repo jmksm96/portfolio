@@ -19,7 +19,7 @@
   .container {
     @include container();
     @include flex(row, space-around, center, wrap);
-    height: 700px;
+    height: 1000px;
 
     .greet {
       @include flex(column, flex-start, flex-start, nowrap);
