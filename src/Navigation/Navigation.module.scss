@@ -9,5 +9,13 @@
     @include text($textFontFamily, 14px, 1.8);
     font-weight: 400;
     text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: $primaryColor
+    }
+  }
+
+  .active {
+    color: $primaryColor
   }
 }

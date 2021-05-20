@@ -8,7 +8,7 @@ const Project = (props) => {
     return (
         <div className={style.project}>
             <div className={style.image} style={props.style}>
-                <Button text = {'Watch'}/>
+                <Button text = {'Watch'} link = {props.link}/>
             </div>
             <div className={style.projectInfo}>
                 <h3 className={style.projectTitle}>{props.title}</h3>

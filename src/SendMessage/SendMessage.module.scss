@@ -4,7 +4,8 @@
 
 .container {
   background-color: $bgSecondColor;
-  @include flex(column, flex-start, center, wrap);
+  @include flex(column, center, center, wrap);
+  min-height: 300px;
 
   .button {
     @extend .btn;

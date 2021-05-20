@@ -6,7 +6,7 @@ import reactIm from '../Assets/Icons/react.png'
 import reduxIm from '../Assets/Icons/redux.png'
 import tsIm from '../Assets/Icons/typescript.png'
 import htmlIm from '../Assets/Icons/html5.png'
-
+import Fade from 'react-reveal/Fade';
 
 const Skills = () => {
 
@@ -50,21 +50,24 @@ const Skills = () => {
 
 
     return (
-        <div className={style.skillsBlock}>
-            <div className={style.container}>
-                <Title text={'Skills'}/>
-                <div className={style.skills}>
+        <Fade>
+            <div id = 'skills' className={style.skillsBlock}>
+                <div className={style.container}>
+                    <Title text={'Skills'}/>
+                    <div className={style.skills}>
 
-                    {skillArr.map((skills) => (
-                        <Skill key={skills.title}
-                               style={skills.imgLogo}
-                               title={skills.title}
-                               skills={skills.skills}/>))}
+                        {skillArr.map((skills) => (
+                            <Skill key={skills.title}
+                                   style={skills.imgLogo}
+                                   title={skills.title}
+                                   skills={skills.skills}/>))}
+
+                    </div>
 
                 </div>
-
             </div>
-        </div>
+        </Fade>
+
     )
 }
 

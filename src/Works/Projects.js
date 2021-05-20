@@ -4,6 +4,9 @@ import Project from "./Project/Project";
 import Title from "../Common/Components/Title/Title";
 import socialImage from '../Assets/Images/social-network.jpg'
 import todolistImage from '../Assets/Images/todo-list.jpg'
+import Tilt from "react-tilt";
+import Fade from 'react-reveal/Fade';
+
 
 const Projects = () => {
 
@@ -16,19 +19,29 @@ const Projects = () => {
     };
 
     return (
-        <div className={style.projectsBlock}>
-            <div className={style.projectsContainer}>
-                <Title text={'Projects'}/>
-                <div className={style.projects}>
-                    <Project style={todolist}
-                             title={'TodoList'}
-                             description={'SPA with usage Material UI React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}/>
-                    <Project style={social}
-                             title={'Social Network'}
-                             description={'SPA with usage AntDesign React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}/>
 
+
+        <div id='projects' className={style.projectsBlock}>
+            <Fade>
+                <div className={style.projectsContainer}>
+                    <Title text={'Projects'}/>
+                    <div className={style.projects}>
+                        <Tilt className="Tilt" options={{max: 25}}>
+                            <Project style={todolist}
+                                     title={'TodoList'}
+                                     description={'SPA with usage Material UI React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}
+                                     link={'https://github.com/jmksm96/TodoList-API-'}/>
+
+                        </Tilt>
+                        <Tilt className="Tilt" options={{max: 25}}>
+                            <Project style={social}
+                                     title={'Social Network'}
+                                     description={'SPA with usage AntDesign React UI framework, React Hooks, Redux with Redux Thunk and RestAPI.'}
+                                     link={'https://github.com/jmksm96/social-network-typescript'}/>
+                        </Tilt>
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     )
 }

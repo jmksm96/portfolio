@@ -6,10 +6,7 @@
   width: 250px;
   background-color: $bgSecondColor;
   @include flex(column, center, center, wrap);
-  //display: flex;
-  //flex-direction: column;
-  //align-items: center;
-  //text-align: center;
+
 
   .icon {
     margin-top: 30px;
