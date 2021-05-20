@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Navigation.module.scss'
-import {Link, animateScroll as scroll} from "react-scroll/";
+import {Link} from "react-scroll/";
 
 const Navigation = () => {
     return (
@@ -34,7 +34,7 @@ const Navigation = () => {
                   duration={500}
             > Contacts</Link>
 
-            <a href="ссылка на резюме">CV</a>
+            <a href="https://disk.yandex.by/i/5pOfW0NpTSiFZg">CV</a>
         </div>
     )
 }

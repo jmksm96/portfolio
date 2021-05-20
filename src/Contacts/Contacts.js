@@ -38,18 +38,27 @@ const Contacts = () => {
                     <form className={style.formContainer}
                           onSubmit={sendEmail}>
                         <input type="text"
+                               name="user_name"
+                               id="input1"
                                className={style.formArea}
+                               data-element="cleanForm"
                                placeholder={'Name'}
                                value={formData.formName}
                                onChange={onChangeName}
                                required/>
-                        <input type="text"
+                        <input type="email"
+                               name="user_email"
+                               id="input2"
+                               data-element="cleanForm"
                                className={style.formArea}
                                placeholder={'E-mail'}
                                value={formData.formEmail}
                                onChange={onChangeEmail}
                                required/>
                         <textarea placeholder={'Message'}
+                                  name="message"
+                                  id="textarea1"
+                                  data-element="cleanForm"
                                   className={style.messageArea}
                                   value={formData.formText}
                                   onChange={onChangeText}
