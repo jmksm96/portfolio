@@ -34,7 +34,7 @@ const Navigation = () => {
                   duration={500}
             > Contacts</Link>
 
-            <a href="https://disk.yandex.by/i/PsU4H1VFaBm1Zg">CV</a>
+            <a href="https://disk.yandex.by/i/rf-39NosnwjgYg">CV</a>
         </div>
     )
 }
