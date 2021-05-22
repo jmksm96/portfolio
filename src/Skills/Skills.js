@@ -34,7 +34,7 @@ const Skills = () => {
         {
             title: "TypeScript/JavaScript",
             imgLogo: jsImg,
-            skills: ["ES6", 'Callbacks']
+            skills: ["ES6", "Callbacks", "Promise", "Event Loop"]
         },
         {
             title: "Redux",
